@@ -21,24 +21,27 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("name","小浣熊");
                 intent.putExtra("price",1);
                 startActivity(intent);
+                finish();
             }
         });
 
         button1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent1=new Intent(MainActivity.this,Main2Activity.class);
+                Intent intent1=new Intent(MainActivity.this,Main3Activity.class);
                 intent1.putExtra("name","呀土豆");
                 intent1.putExtra("price",3);
                 startActivity(intent1);
+                finish();
             }
         });
 
         button2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent2=new Intent(MainActivity.this,Main2Activity.class);
+                Intent intent2=new Intent(MainActivity.this,Main4Activity.class);
                 intent2.putExtra("name","卫龙");
                 intent2.putExtra("price",2);
                 startActivity(intent2);
+                finish();
             }
         });
     }
